@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:poxedon/models/pokemonmodel.dart';
 import 'package:poxedon/routes/myroute.dart';
+import 'package:poxedon/screens/search.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -19,8 +21,9 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'Pokemons',
       theme: ThemeData.light(),
-      onGenerateRoute: MyRoute.onGenerateRoute,
-      initialRoute: '/home',
+      // onGenerateRoute: MyRoute.onGenerateRoute,
+      // initialRoute: '/home',
+      home: SearchPage(),
     );
   }
 }
